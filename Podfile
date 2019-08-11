@@ -7,6 +7,8 @@ target 'jjanhaeyo' do
 
   # Pods for jjanhaeyo
   pod 'FBSDKLoginKit', '~> 5.2.3'
+  pod 'KakaoOpenSDK', '~> 1.13.0'
+  pod 'GoogleSignIn', '~> 4.4.0'
   target 'jjanhaeyoUITests' do
     inherit! :search_paths
     # Pods for testing
