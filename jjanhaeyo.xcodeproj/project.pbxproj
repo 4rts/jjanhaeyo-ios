@@ -225,7 +225,6 @@
 				B567229922FD9374009A300A /* Frameworks */,
 				B567229A22FD9374009A300A /* Resources */,
 				84C64FCEB6E11B02377903AF /* [CP] Embed Pods Frameworks */,
-				99AE4B7476A6A4D396578CE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,23 +391,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jjanhaeyo/Pods-jjanhaeyo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99AE4B7476A6A4D396578CE0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-jjanhaeyo/Pods-jjanhaeyo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-jjanhaeyo/Pods-jjanhaeyo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jjanhaeyo/Pods-jjanhaeyo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
