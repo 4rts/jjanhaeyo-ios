@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 import FBSDKLoginKit
 import KakaoOpenSDK
-import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,8 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // FaceBook
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        // Google
-        GIDSignIn.sharedInstance().clientID = "76493067515-gepn8p7j0593lec99rbq8gmea5vktvur.apps.googleusercontent.com"
         return true
     }
 
@@ -56,10 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if KOSession.isKakaoAccountLoginCallback(url.absoluteURL) {
                 return KOSession.handleOpen(url)
             }
-            // Google
-            if scheme.contains("com.googleusercontent.apps") {
-                return GIDSignIn.sharedInstance().handle(url as URL?,sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,annotation: options[UIApplication.OpenURLOptionsKey.annotation])
-            }
+            
         }
         return true
     }
@@ -74,10 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if KOSession.isKakaoAccountLoginCallback(url.absoluteURL) {
             return KOSession.handleOpen(url)
         }
-        // Google
-        if scheme.contains("com.googleusercontent.apps") {
-            return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
-        }
+
         return true
     }
     
