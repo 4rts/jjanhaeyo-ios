@@ -12,8 +12,14 @@ import KakaoOpenSDK
 
 class SignInVC: UIViewController {
 
-    @IBOutlet weak var SignInView: UIView!
+    @IBOutlet weak var signInBackgroundView: UIView!
     @IBOutlet weak var explainTextLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.signInBackgroundView.applyGradient(colours: [UIColor(hex: "#6a73ff"), UIColor(hex: "#6dafff")])
+        self.explainTextLabel.setLineSpacing("참여하시려면\n로그인이 필요해요!", lineSpacing: 10.0, alignment: .center)
+    }
     
     @IBAction func loginFaceBookAction(_ sender: Any) {
         LoginManager().logIn(permissions: ["public_profile", "email", "user_birthday", "user_gender"], from: self, handler: { (result, error) in
@@ -45,7 +51,7 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func closeLogInView(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

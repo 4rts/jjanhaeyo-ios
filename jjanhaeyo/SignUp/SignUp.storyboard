@@ -23,9 +23,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnM-sq-cLj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <action selector="closeLogInView:" destination="caN-qV-iol" eventType="touchUpInside" id="Iq9-7n-YQR"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-zU-Jiu">
                                 <rect key="frame" x="36" y="201" width="342" height="504"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KcF-p7-gDT">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="504"/>
+                                        <color key="backgroundColor" red="0.42352941179999998" green="0.56470588239999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jh-MG-5ab">
                                         <rect key="frame" x="71.5" y="120" width="199.5" height="55.5"/>
                                         <string key="text">참여하시려면
@@ -43,6 +61,17 @@
                                         <state key="normal" title="카카오톡으로 시작하기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginKakaoAction:" destination="caN-qV-iol" eventType="touchUpInside" id="DAC-Pn-ije"/>
                                         </connections>
@@ -56,6 +85,17 @@
                                         <state key="normal" title="페이스북으로 시작하기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginFaceBookAction:" destination="caN-qV-iol" eventType="touchUpInside" id="uel-58-fcA"/>
                                         </connections>
@@ -74,7 +114,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.42352941176470588" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="3jh-MG-5ab" firstAttribute="top" secondItem="ecQ-zU-Jiu" secondAttribute="top" constant="120" id="33S-ci-mKm"/>
                                     <constraint firstAttribute="trailing" secondItem="kgs-Wi-UMN" secondAttribute="trailing" constant="32" id="6bN-OH-gSS"/>
@@ -84,22 +123,31 @@
                                     <constraint firstAttribute="height" constant="504" id="GqA-xJ-rnl"/>
                                     <constraint firstItem="kgs-Wi-UMN" firstAttribute="leading" secondItem="ecQ-zU-Jiu" secondAttribute="leading" constant="32" id="JFh-h4-RTh"/>
                                     <constraint firstItem="3jh-MG-5ab" firstAttribute="centerX" secondItem="ecQ-zU-Jiu" secondAttribute="centerX" id="U8f-hB-nR1"/>
+                                    <constraint firstItem="KcF-p7-gDT" firstAttribute="leading" secondItem="ecQ-zU-Jiu" secondAttribute="leading" id="avE-EY-y8c"/>
                                     <constraint firstAttribute="bottom" secondItem="PUf-rT-5Va" secondAttribute="bottom" constant="34" id="jLp-qf-jQ5"/>
+                                    <constraint firstAttribute="bottom" secondItem="KcF-p7-gDT" secondAttribute="bottom" id="nQW-dd-MKF"/>
+                                    <constraint firstItem="KcF-p7-gDT" firstAttribute="top" secondItem="ecQ-zU-Jiu" secondAttribute="top" id="pBZ-qG-29F"/>
                                     <constraint firstItem="kgs-Wi-UMN" firstAttribute="top" secondItem="JKZ-zb-cAQ" secondAttribute="bottom" constant="16" id="qo7-HV-xXF"/>
                                     <constraint firstAttribute="trailing" secondItem="JKZ-zb-cAQ" secondAttribute="trailing" constant="32" id="szt-Wd-Ezl"/>
+                                    <constraint firstAttribute="trailing" secondItem="KcF-p7-gDT" secondAttribute="trailing" id="zhG-69-fQ2"/>
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vnM-sq-cLj" firstAttribute="trailing" secondItem="LYb-gB-Tb9" secondAttribute="trailing" id="5ot-0f-UGX"/>
                             <constraint firstItem="ecQ-zU-Jiu" firstAttribute="centerY" secondItem="LYb-gB-Tb9" secondAttribute="centerY" id="Id9-gF-ygb"/>
+                            <constraint firstAttribute="bottom" secondItem="vnM-sq-cLj" secondAttribute="bottom" id="J2A-Eq-Hnh"/>
+                            <constraint firstItem="vnM-sq-cLj" firstAttribute="leading" secondItem="LYb-gB-Tb9" secondAttribute="leading" id="Qg2-gX-Ma0"/>
                             <constraint firstItem="LYb-gB-Tb9" firstAttribute="trailing" secondItem="ecQ-zU-Jiu" secondAttribute="trailing" constant="36" id="RTN-kD-a5Z"/>
+                            <constraint firstItem="vnM-sq-cLj" firstAttribute="top" secondItem="CoQ-K4-vS7" secondAttribute="top" id="Vxi-Nd-fzs"/>
                             <constraint firstItem="ecQ-zU-Jiu" firstAttribute="leading" secondItem="LYb-gB-Tb9" secondAttribute="leading" constant="36" id="qIf-fd-LNw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYb-gB-Tb9"/>
                     </view>
                     <connections>
-                        <outlet property="SignInView" destination="ecQ-zU-Jiu" id="vyR-MF-szX"/>
                         <outlet property="explainTextLabel" destination="3jh-MG-5ab" id="ZoG-yn-swd"/>
+                        <outlet property="signInBackgroundView" destination="KcF-p7-gDT" id="Ayl-by-qhv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JE7-Om-MJW" sceneMemberID="firstResponder"/>
