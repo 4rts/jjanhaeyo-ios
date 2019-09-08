@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignUpVC.swift
 //  jjanhaeyo
 //
 //  Created by minjae on 09/08/2019.
@@ -9,15 +9,9 @@
 import UIKit
 import FBSDKLoginKit
 import KakaoOpenSDK
-import GoogleSignIn
 
-class ViewController: UIViewController {
+class SignUpVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        GIDSignIn.sharedInstance()?.delegate = self
-        GIDSignIn.sharedInstance()?.uiDelegate = self
-    }
 
     @IBAction func loginFaceBookAction(_ sender: Any) {
         LoginManager().logIn(permissions: ["public_profile", "email", "user_birthday", "user_gender"], from: self, handler: { (result, error) in
@@ -30,10 +24,6 @@ class ViewController: UIViewController {
                 }
             })
         })
-    }
-    
-    @IBAction func loginGoogleAction(_ sender: Any) {
-        GIDSignIn.sharedInstance()?.signIn()
     }
     
     @IBAction func loginKakaoAction(_ sender: Any) {
@@ -52,27 +42,4 @@ class ViewController: UIViewController {
         })
     }
     
-}
-
-extension ViewController: GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("사용자가 로그인 취소, \(error)")
-            return
-        } else if let user = user {
-            print("userID: \(user.userID)")
-            print("idToken: \(user.authentication.idToken)")
-            print("name: \(user.profile.name)")
-            print("email: \(user.profile.email)")
-        }
-    }
-}
-
-extension ViewController: GIDSignInUIDelegate {
-    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
-        viewController.dismiss(animated: true, completion: nil)
-    }
-    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
-        self.present(viewController, animated: true, completion: nil)
-    }
 }

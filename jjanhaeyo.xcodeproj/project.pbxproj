@@ -3,19 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5A7A9BD91341D8F97B52607A /* Pods_jjanhaeyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2BB5E12A80B51A1A0C056B /* Pods_jjanhaeyo.framework */; };
 		998A6D4C346F440588B266EE /* Pods_jjanhaeyoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93D61F4B6CE3E46E243B37E /* Pods_jjanhaeyoUITests.framework */; };
 		B56722A022FD9374009A300A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567229F22FD9374009A300A /* AppDelegate.swift */; };
-		B56722A222FD9374009A300A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56722A122FD9374009A300A /* ViewController.swift */; };
+		B56722A222FD9374009A300A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56722A122FD9374009A300A /* SignUpVC.swift */; };
 		B56722A522FD9374009A300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56722A322FD9374009A300A /* Main.storyboard */; };
 		B56722A822FD9374009A300A /* jjanhaeyo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B56722A622FD9374009A300A /* jjanhaeyo.xcdatamodeld */; };
 		B56722AA22FD9375009A300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56722A922FD9375009A300A /* Assets.xcassets */; };
 		B56722AD22FD9375009A300A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56722AB22FD9375009A300A /* LaunchScreen.storyboard */; };
 		B56722B822FD9376009A300A /* jjanhaeyoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56722B722FD9376009A300A /* jjanhaeyoUITests.swift */; };
+		B5BE72082324EDA0006981C9 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72072324EDA0006981C9 /* SignUp.storyboard */; };
+		B5BE720C2324F493006981C9 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE720B2324F493006981C9 /* ColorExtension.swift */; };
+		B5BE72182324F597006981C9 /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE720F2324F593006981C9 /* SCDream1.otf */; };
+		B5BE72192324F599006981C9 /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE720F2324F593006981C9 /* SCDream1.otf */; };
+		B5BE721A2324F59B006981C9 /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72152324F593006981C9 /* SCDream2.otf */; };
+		B5BE721B2324F59C006981C9 /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72152324F593006981C9 /* SCDream2.otf */; };
+		B5BE721C2324F59E006981C9 /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72132324F593006981C9 /* SCDream3.otf */; };
+		B5BE721D2324F59F006981C9 /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72132324F593006981C9 /* SCDream3.otf */; };
+		B5BE721E2324F5A1006981C9 /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72162324F593006981C9 /* SCDream4.otf */; };
+		B5BE721F2324F5A2006981C9 /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72162324F593006981C9 /* SCDream4.otf */; };
+		B5BE72202324F5A4006981C9 /* SCDream5.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72142324F593006981C9 /* SCDream5.otf */; };
+		B5BE72212324F5A5006981C9 /* SCDream5.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72142324F593006981C9 /* SCDream5.otf */; };
+		B5BE72222324F5A8006981C9 /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72122324F593006981C9 /* SCDream6.otf */; };
+		B5BE72232324F5A8006981C9 /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72122324F593006981C9 /* SCDream6.otf */; };
+		B5BE72242324F5AB006981C9 /* SCDream7.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72102324F593006981C9 /* SCDream7.otf */; };
+		B5BE72252324F5AB006981C9 /* SCDream7.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72102324F593006981C9 /* SCDream7.otf */; };
+		B5BE72262324F5AD006981C9 /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72172324F593006981C9 /* SCDream8.otf */; };
+		B5BE72272324F5AE006981C9 /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72172324F593006981C9 /* SCDream8.otf */; };
+		B5BE72282324F5B2006981C9 /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72112324F593006981C9 /* SCDream9.otf */; };
+		B5BE72292324F5B2006981C9 /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72112324F593006981C9 /* SCDream9.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +56,7 @@
 		B23C31E1A516C11974CE6405 /* Pods-jjanhaeyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jjanhaeyo.debug.xcconfig"; path = "Target Support Files/Pods-jjanhaeyo/Pods-jjanhaeyo.debug.xcconfig"; sourceTree = "<group>"; };
 		B567229C22FD9374009A300A /* jjanhaeyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjanhaeyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B567229F22FD9374009A300A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B56722A122FD9374009A300A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B56722A122FD9374009A300A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		B56722A422FD9374009A300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56722A722FD9374009A300A /* jjanhaeyo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = jjanhaeyo.xcdatamodel; sourceTree = "<group>"; };
 		B56722A922FD9375009A300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +65,17 @@
 		B56722B322FD9376009A300A /* jjanhaeyoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jjanhaeyoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56722B722FD9376009A300A /* jjanhaeyoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjanhaeyoUITests.swift; sourceTree = "<group>"; };
 		B56722B922FD9376009A300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BE72072324EDA0006981C9 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		B5BE720B2324F493006981C9 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B5BE720F2324F593006981C9 /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream1.otf; sourceTree = "<group>"; };
+		B5BE72102324F593006981C9 /* SCDream7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream7.otf; sourceTree = "<group>"; };
+		B5BE72112324F593006981C9 /* SCDream9.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream9.otf; sourceTree = "<group>"; };
+		B5BE72122324F593006981C9 /* SCDream6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream6.otf; sourceTree = "<group>"; };
+		B5BE72132324F593006981C9 /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream3.otf; sourceTree = "<group>"; };
+		B5BE72142324F593006981C9 /* SCDream5.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream5.otf; sourceTree = "<group>"; };
+		B5BE72152324F593006981C9 /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
+		B5BE72162324F593006981C9 /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream4.otf; sourceTree = "<group>"; };
+		B5BE72172324F593006981C9 /* SCDream8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream8.otf; sourceTree = "<group>"; };
 		C9FBC5A678B7C659B3794608 /* Pods-jjanhaeyoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jjanhaeyoUITests.release.xcconfig"; path = "Target Support Files/Pods-jjanhaeyoUITests/Pods-jjanhaeyoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +116,6 @@
 				8BFFB5A3112B10A9AF94F113 /* Pods-jjanhaeyoUITests.debug.xcconfig */,
 				C9FBC5A678B7C659B3794608 /* Pods-jjanhaeyoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,12 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				B567229F22FD9374009A300A /* AppDelegate.swift */,
-				B56722A122FD9374009A300A /* ViewController.swift */,
-				B56722A322FD9374009A300A /* Main.storyboard */,
-				B56722A922FD9375009A300A /* Assets.xcassets */,
-				B56722AB22FD9375009A300A /* LaunchScreen.storyboard */,
 				B56722AE22FD9375009A300A /* Info.plist */,
-				B56722A622FD9374009A300A /* jjanhaeyo.xcdatamodeld */,
+				B5BE720A2324F467006981C9 /* Utils */,
+				B5BE72092324EE22006981C9 /* Main */,
+				B5BE72062324ECA5006981C9 /* SignUp */,
+				B5BE720D2324F52C006981C9 /* Resources */,
 			);
 			path = jjanhaeyo;
 			sourceTree = "<group>";
@@ -130,6 +159,58 @@
 				B56722B922FD9376009A300A /* Info.plist */,
 			);
 			path = jjanhaeyoUITests;
+			sourceTree = "<group>";
+		};
+		B5BE72062324ECA5006981C9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE72072324EDA0006981C9 /* SignUp.storyboard */,
+				B56722A122FD9374009A300A /* SignUpVC.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B5BE72092324EE22006981C9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B56722A322FD9374009A300A /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5BE720A2324F467006981C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE720B2324F493006981C9 /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B5BE720D2324F52C006981C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE720E2324F586006981C9 /* Font */,
+				B56722A622FD9374009A300A /* jjanhaeyo.xcdatamodeld */,
+				B56722AB22FD9375009A300A /* LaunchScreen.storyboard */,
+				B56722A922FD9375009A300A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5BE720E2324F586006981C9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE720F2324F593006981C9 /* SCDream1.otf */,
+				B5BE72152324F593006981C9 /* SCDream2.otf */,
+				B5BE72132324F593006981C9 /* SCDream3.otf */,
+				B5BE72162324F593006981C9 /* SCDream4.otf */,
+				B5BE72142324F593006981C9 /* SCDream5.otf */,
+				B5BE72122324F593006981C9 /* SCDream6.otf */,
+				B5BE72102324F593006981C9 /* SCDream7.otf */,
+				B5BE72172324F593006981C9 /* SCDream8.otf */,
+				B5BE72112324F593006981C9 /* SCDream9.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,8 +298,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BE72222324F5A8006981C9 /* SCDream6.otf in Resources */,
+				B5BE721C2324F59E006981C9 /* SCDream3.otf in Resources */,
+				B5BE721A2324F59B006981C9 /* SCDream2.otf in Resources */,
+				B5BE72182324F597006981C9 /* SCDream1.otf in Resources */,
+				B5BE72202324F5A4006981C9 /* SCDream5.otf in Resources */,
+				B5BE72242324F5AB006981C9 /* SCDream7.otf in Resources */,
+				B5BE72262324F5AD006981C9 /* SCDream8.otf in Resources */,
 				B56722AD22FD9375009A300A /* LaunchScreen.storyboard in Resources */,
 				B56722AA22FD9375009A300A /* Assets.xcassets in Resources */,
+				B5BE72082324EDA0006981C9 /* SignUp.storyboard in Resources */,
+				B5BE72282324F5B2006981C9 /* SCDream9.otf in Resources */,
+				B5BE721E2324F5A1006981C9 /* SCDream4.otf in Resources */,
 				B56722A522FD9374009A300A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +318,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BE72232324F5A8006981C9 /* SCDream6.otf in Resources */,
+				B5BE72212324F5A5006981C9 /* SCDream5.otf in Resources */,
+				B5BE72272324F5AE006981C9 /* SCDream8.otf in Resources */,
+				B5BE72292324F5B2006981C9 /* SCDream9.otf in Resources */,
+				B5BE721D2324F59F006981C9 /* SCDream3.otf in Resources */,
+				B5BE721B2324F59C006981C9 /* SCDream2.otf in Resources */,
+				B5BE721F2324F5A2006981C9 /* SCDream4.otf in Resources */,
+				B5BE72252324F5AB006981C9 /* SCDream7.otf in Resources */,
+				B5BE72192324F599006981C9 /* SCDream1.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,9 +418,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56722A222FD9374009A300A /* ViewController.swift in Sources */,
+				B56722A222FD9374009A300A /* SignUpVC.swift in Sources */,
 				B56722A822FD9374009A300A /* jjanhaeyo.xcdatamodeld in Sources */,
 				B56722A022FD9374009A300A /* AppDelegate.swift in Sources */,
+				B5BE720C2324F493006981C9 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
