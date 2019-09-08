@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SCDream1</string>
+        <string>SCDream2</string>
+        <string>SCDream3</string>
+        <string>SCDream4</string>
+        <string>SCDream5</string>
+        <string>SCDream6</string>
+        <string>SCDream7</string>
+        <string>SCDream8</string>
+        <string>SCDream9</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
