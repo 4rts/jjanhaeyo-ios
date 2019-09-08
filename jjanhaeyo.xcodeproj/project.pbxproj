@@ -10,7 +10,7 @@
 		5A7A9BD91341D8F97B52607A /* Pods_jjanhaeyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2BB5E12A80B51A1A0C056B /* Pods_jjanhaeyo.framework */; };
 		998A6D4C346F440588B266EE /* Pods_jjanhaeyoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93D61F4B6CE3E46E243B37E /* Pods_jjanhaeyoUITests.framework */; };
 		B56722A022FD9374009A300A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B567229F22FD9374009A300A /* AppDelegate.swift */; };
-		B56722A222FD9374009A300A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56722A122FD9374009A300A /* SignUpVC.swift */; };
+		B56722A222FD9374009A300A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56722A122FD9374009A300A /* SignInVC.swift */; };
 		B56722A522FD9374009A300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56722A322FD9374009A300A /* Main.storyboard */; };
 		B56722A822FD9374009A300A /* jjanhaeyo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B56722A622FD9374009A300A /* jjanhaeyo.xcdatamodeld */; };
 		B56722AA22FD9375009A300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56722A922FD9375009A300A /* Assets.xcassets */; };
@@ -36,6 +36,7 @@
 		B5BE72272324F5AE006981C9 /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72172324F593006981C9 /* SCDream8.otf */; };
 		B5BE72282324F5B2006981C9 /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72112324F593006981C9 /* SCDream9.otf */; };
 		B5BE72292324F5B2006981C9 /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE72112324F593006981C9 /* SCDream9.otf */; };
+		B5BE722B2324FA62006981C9 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE722A2324FA62006981C9 /* TextExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,7 @@
 		B23C31E1A516C11974CE6405 /* Pods-jjanhaeyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jjanhaeyo.debug.xcconfig"; path = "Target Support Files/Pods-jjanhaeyo/Pods-jjanhaeyo.debug.xcconfig"; sourceTree = "<group>"; };
 		B567229C22FD9374009A300A /* jjanhaeyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jjanhaeyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B567229F22FD9374009A300A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B56722A122FD9374009A300A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		B56722A122FD9374009A300A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		B56722A422FD9374009A300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56722A722FD9374009A300A /* jjanhaeyo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = jjanhaeyo.xcdatamodel; sourceTree = "<group>"; };
 		B56722A922FD9375009A300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		B5BE72152324F593006981C9 /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
 		B5BE72162324F593006981C9 /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream4.otf; sourceTree = "<group>"; };
 		B5BE72172324F593006981C9 /* SCDream8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream8.otf; sourceTree = "<group>"; };
+		B5BE722A2324FA62006981C9 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
 		C9FBC5A678B7C659B3794608 /* Pods-jjanhaeyoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jjanhaeyoUITests.release.xcconfig"; path = "Target Support Files/Pods-jjanhaeyoUITests/Pods-jjanhaeyoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BE72072324EDA0006981C9 /* SignUp.storyboard */,
-				B56722A122FD9374009A300A /* SignUpVC.swift */,
+				B56722A122FD9374009A300A /* SignInVC.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BE720B2324F493006981C9 /* ColorExtension.swift */,
+				B5BE722A2324FA62006981C9 /* TextExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -400,8 +403,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56722A222FD9374009A300A /* SignUpVC.swift in Sources */,
+				B56722A222FD9374009A300A /* SignInVC.swift in Sources */,
 				B56722A822FD9374009A300A /* jjanhaeyo.xcdatamodeld in Sources */,
+				B5BE722B2324FA62006981C9 /* TextExtension.swift in Sources */,
 				B56722A022FD9374009A300A /* AppDelegate.swift in Sources */,
 				B5BE720C2324F493006981C9 /* ColorExtension.swift in Sources */,
 			);

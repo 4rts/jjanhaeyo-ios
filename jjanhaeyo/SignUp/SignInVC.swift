@@ -1,5 +1,5 @@
 //
-//  SignUpVC.swift
+//  SignInVC.swift
 //  jjanhaeyo
 //
 //  Created by minjae on 09/08/2019.
@@ -10,9 +10,11 @@ import UIKit
 import FBSDKLoginKit
 import KakaoOpenSDK
 
-class SignUpVC: UIViewController {
+class SignInVC: UIViewController {
 
-
+    @IBOutlet weak var SignInView: UIView!
+    @IBOutlet weak var explainTextLabel: UILabel!
+    
     @IBAction func loginFaceBookAction(_ sender: Any) {
         LoginManager().logIn(permissions: ["public_profile", "email", "user_birthday", "user_gender"], from: self, handler: { (result, error) in
             guard let result = result, error == nil && !result.isCancelled else { return }
@@ -40,6 +42,10 @@ class SignUpVC: UIViewController {
                 }
             })
         })
+    }
+    
+    @IBAction func closeLogInView(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
     }
     
 }

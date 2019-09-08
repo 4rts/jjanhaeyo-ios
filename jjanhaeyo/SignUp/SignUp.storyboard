@@ -9,20 +9,84 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SCDream6.otf">
+            <string>S-CoreDream-6Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Sign UpVC-->
+        <!--Sign InVC-->
         <scene sceneID="uVu-Mo-v7W">
             <objects>
-                <viewController id="caN-qV-iol" customClass="SignUpVC" customModule="jjanhaeyo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="caN-qV-iol" customClass="SignInVC" customModule="jjanhaeyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CoQ-K4-vS7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-zU-Jiu">
                                 <rect key="frame" x="36" y="201" width="342" height="504"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jh-MG-5ab">
+                                        <rect key="frame" x="71.5" y="120" width="199.5" height="55.5"/>
+                                        <string key="text">참여하시려면
+로그인이 필요해요!</string>
+                                        <fontDescription key="fontDescription" name="S-CoreDream-6Bold" family="S-Core Dream" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgs-Wi-UMN">
+                                        <rect key="frame" x="32" y="358" width="278" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SAc-m8-OWh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="카카오톡으로 시작하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginKakaoAction:" destination="caN-qV-iol" eventType="touchUpInside" id="DAC-Pn-ije"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKZ-zb-cAQ">
+                                        <rect key="frame" x="32" y="282" width="278" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="bUJ-wu-5QO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="페이스북으로 시작하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginFaceBookAction:" destination="caN-qV-iol" eventType="touchUpInside" id="uel-58-fcA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUf-rT-5Va">
+                                        <rect key="frame" x="129" y="442" width="84" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="RNv-TQ-JRI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="둘러볼게요!">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeLogInView:" destination="caN-qV-iol" eventType="touchUpInside" id="ivY-Cb-qMQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42352941176470588" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="3jh-MG-5ab" firstAttribute="top" secondItem="ecQ-zU-Jiu" secondAttribute="top" constant="120" id="33S-ci-mKm"/>
+                                    <constraint firstAttribute="trailing" secondItem="kgs-Wi-UMN" secondAttribute="trailing" constant="32" id="6bN-OH-gSS"/>
+                                    <constraint firstItem="PUf-rT-5Va" firstAttribute="top" secondItem="kgs-Wi-UMN" secondAttribute="bottom" constant="24" id="91V-Fn-XlS"/>
+                                    <constraint firstItem="PUf-rT-5Va" firstAttribute="centerX" secondItem="ecQ-zU-Jiu" secondAttribute="centerX" id="FPY-CE-FzJ"/>
+                                    <constraint firstItem="JKZ-zb-cAQ" firstAttribute="leading" secondItem="ecQ-zU-Jiu" secondAttribute="leading" constant="32" id="Fk4-JT-bAR"/>
                                     <constraint firstAttribute="height" constant="504" id="GqA-xJ-rnl"/>
+                                    <constraint firstItem="kgs-Wi-UMN" firstAttribute="leading" secondItem="ecQ-zU-Jiu" secondAttribute="leading" constant="32" id="JFh-h4-RTh"/>
+                                    <constraint firstItem="3jh-MG-5ab" firstAttribute="centerX" secondItem="ecQ-zU-Jiu" secondAttribute="centerX" id="U8f-hB-nR1"/>
+                                    <constraint firstAttribute="bottom" secondItem="PUf-rT-5Va" secondAttribute="bottom" constant="34" id="jLp-qf-jQ5"/>
+                                    <constraint firstItem="kgs-Wi-UMN" firstAttribute="top" secondItem="JKZ-zb-cAQ" secondAttribute="bottom" constant="16" id="qo7-HV-xXF"/>
+                                    <constraint firstAttribute="trailing" secondItem="JKZ-zb-cAQ" secondAttribute="trailing" constant="32" id="szt-Wd-Ezl"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -33,6 +97,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYb-gB-Tb9"/>
                     </view>
+                    <connections>
+                        <outlet property="SignInView" destination="ecQ-zU-Jiu" id="vyR-MF-szX"/>
+                        <outlet property="explainTextLabel" destination="3jh-MG-5ab" id="ZoG-yn-swd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JE7-Om-MJW" sceneMemberID="firstResponder"/>
             </objects>
