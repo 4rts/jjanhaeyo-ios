@@ -39,6 +39,8 @@
 		B5BE722B2324FA62006981C9 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE722A2324FA62006981C9 /* TextExtension.swift */; };
 		B5BE722D2324FFE7006981C9 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE722C2324FFE7006981C9 /* ColorExtension.swift */; };
 		B5BE722F23250237006981C9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE722E23250237006981C9 /* MainVC.swift */; };
+		B5BE723123251888006981C9 /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE723023251888006981C9 /* DeviceExtension.swift */; };
+		B5BE72332325195E006981C9 /* PrivacyConsentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE72322325195E006981C9 /* PrivacyConsentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		B5BE722A2324FA62006981C9 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
 		B5BE722C2324FFE7006981C9 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B5BE722E23250237006981C9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B5BE723023251888006981C9 /* DeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
+		B5BE72322325195E006981C9 /* PrivacyConsentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyConsentVC.swift; sourceTree = "<group>"; };
 		C9FBC5A678B7C659B3794608 /* Pods-jjanhaeyoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jjanhaeyoUITests.release.xcconfig"; path = "Target Support Files/Pods-jjanhaeyoUITests/Pods-jjanhaeyoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +176,7 @@
 			children = (
 				B5BE72072324EDA0006981C9 /* SignUp.storyboard */,
 				B56722A122FD9374009A300A /* SignInVC.swift */,
+				B5BE72322325195E006981C9 /* PrivacyConsentVC.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				B5BE720B2324F493006981C9 /* ViewExtension.swift */,
 				B5BE722A2324FA62006981C9 /* TextExtension.swift */,
 				B5BE722C2324FFE7006981C9 /* ColorExtension.swift */,
+				B5BE723023251888006981C9 /* DeviceExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -409,11 +415,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BE72332325195E006981C9 /* PrivacyConsentVC.swift in Sources */,
 				B56722A222FD9374009A300A /* SignInVC.swift in Sources */,
 				B56722A822FD9374009A300A /* jjanhaeyo.xcdatamodeld in Sources */,
 				B5BE722B2324FA62006981C9 /* TextExtension.swift in Sources */,
 				B5BE722D2324FFE7006981C9 /* ColorExtension.swift in Sources */,
 				B56722A022FD9374009A300A /* AppDelegate.swift in Sources */,
+				B5BE723123251888006981C9 /* DeviceExtension.swift in Sources */,
 				B5BE720C2324F493006981C9 /* ViewExtension.swift in Sources */,
 				B5BE722F23250237006981C9 /* MainVC.swift in Sources */,
 			);

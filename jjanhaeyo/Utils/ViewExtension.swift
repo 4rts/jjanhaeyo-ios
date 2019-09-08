@@ -98,17 +98,35 @@ extension UIView {
     }
 }
 
+// Gradient
 extension UIView {
-    func applyGradient(colours: [UIColor?]) -> Void {
-        self.applyGradient(colours: colours, locations: nil)
+    func applyGradient(colours: [UIColor?], cornerRadius: CGFloat = 30) -> Void {
+        self.applyGradient(colours: colours, locations: nil, cornerRadius: cornerRadius)
     }
     
-    func applyGradient(colours: [UIColor?], locations: [NSNumber]?) -> Void {
+    func applyGradient(colours: [UIColor?], locations: [NSNumber]?, cornerRadius: CGFloat) -> Void {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
-        gradient.colors = colours.map { $0?.cgColor ?? UIColor(white: 1, alpha: 1)}
+        gradient.colors = colours.map { ($0 ?? UIColor(white: 1, alpha: 1)).cgColor}
         gradient.locations = locations
-        gradient.cornerRadius = 30
+        gradient.cornerRadius = cornerRadius
         self.layer.addSublayer(gradient)
     }
 }
+
+// Constraints
+extension UIView {
+    public func setContraintsForDevice(NotchO: CGFloat, NotchX: CGFloat){
+        for constraint in self.constraints {
+            if constraint.identifier == "constraints" {
+                if (UIDevice.current.isiPhoneXS || UIDevice.current.isiPhoneXSMAX)  {
+                    constraint.constant = NotchO
+                }
+                else {
+                    constraint.constant = NotchX
+                }
+            }
+        }
+    }
+}
+
