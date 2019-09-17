@@ -5,14 +5,14 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>SCDream1</string>
-        <string>SCDream2</string>
-        <string>SCDream3</string>
-        <string>SCDream4</string>
-        <string>SCDream5</string>
-        <string>SCDream6</string>
-        <string>SCDream7</string>
-        <string>SCDream8</string>
-        <string>SCDream9</string>
+		<string>SCDream2</string>
+		<string>SCDream3</string>
+		<string>SCDream4</string>
+		<string>SCDream5</string>
+		<string>SCDream6</string>
+		<string>SCDream7</string>
+		<string>SCDream8</string>
+		<string>SCDream9</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
@@ -84,5 +84,7 @@
 	<string>jjanhaeyo</string>
 	<key>KAKAO_APP_KEY</key>
 	<string>823eaa857829746a9f70882f54a5db43</string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYWxzd28yNzIyIiwiYSI6ImNrMG9hcXZicTAyNHIzY3BndDl5ZXU1MW0ifQ.yHFMKd-9Eyv14gM6E60RLg</string>
 </dict>
 </plist>

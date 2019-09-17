@@ -23,22 +23,26 @@ PODS:
   - KakaoOpenSDK/KakaoOpenSDK (1.13.0)
   - KakaoOpenSDK/KakaoS2 (1.13.0):
     - KakaoOpenSDK/KakaoCommon
+  - Mapbox-iOS-SDK (5.3.0)
 
 DEPENDENCIES:
   - FBSDKLoginKit (~> 5.2.3)
   - KakaoOpenSDK (~> 1.13.0)
+  - Mapbox-iOS-SDK (~> 5.3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FBSDKCoreKit
     - FBSDKLoginKit
     - KakaoOpenSDK
+    - Mapbox-iOS-SDK
 
 SPEC CHECKSUMS:
   FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
   FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
   KakaoOpenSDK: e1149457a7e3ab9230453fcf75c01d66c9a655af
+  Mapbox-iOS-SDK: 0ac8ea3c3ec70545d70f83afa1f1358bc4a0b148
 
-PODFILE CHECKSUM: 88868b2c3bb3a6eb25b43f7d9288f826f860a358
+PODFILE CHECKSUM: c6c81ebe2d3bcb6463c6bba7932c3659723189e8
 
 COCOAPODS: 1.7.5
